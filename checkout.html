@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empezar gratis — Tadeo</title>
+
+<!-- Meta Pixel: solo PageView. InitiateCheckout se dispara en el botón final, no aquí (ya se disparó en la landing) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1270864691823274');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1270864691823274&ev=InitiateCheckout&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --color-deep: #0F2A3D;
+    --color-teal: #14B8A6;
+    --color-coral: #FB7185;
+    --color-cream: #FFF8F0;
+    --color-warm: #FEF3E8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    color: var(--color-deep);
+    background: var(--color-cream);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; }
+
+  .btn-pay {
+    background: var(--color-deep);
+    color: white;
+    padding: 20px 48px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+    box-shadow: 0 4px 20px rgba(15,42,61,0.25);
+    border: none;
+    cursor: pointer;
+  }
+  .btn-pay:hover { background: #1A3A52; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(15,42,61,0.3); }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(15,42,61,0.07);
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-teal);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .step-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-deep);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .guarantee-box {
+    background: white;
+    border: 2px solid rgba(20, 184, 166, 0.3);
+    border-radius: 16px;
+    padding: 20px 24px;
+  }
+
+  .trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    border: 1px solid rgba(15,42,61,0.1);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: rgba(15,42,61,0.65);
+    font-weight: 500;
+  }
+
+  /* Pulse animation en el botón */
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 4px 20px rgba(15,42,61,0.25), 0 0 0 0 rgba(20,184,166,0.4); }
+    70% { box-shadow: 0 4px 20px rgba(15,42,61,0.25), 0 0 0 12px rgba(20,184,166,0); }
+    100% { box-shadow: 0 4px 20px rgba(15,42,61,0.25), 0 0 0 0 rgba(20,184,166,0); }
+  }
+  .btn-pay { animation: pulse-ring 2.5s infinite; }
+  .btn-pay:hover { animation: none; }
+</style>
+</head>
+
+<body>
+
+<!-- NAV mínimo -->
+<nav style="padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(15,42,61,0.07); background: white;">
+  <a href="/" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--color-deep);">
+    <div style="width: 36px; height: 36px; border-radius: 8px; background: var(--color-deep); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">T</div>
+    <span style="font-weight: 600; font-size: 17px;">Tadeo</span>
+  </a>
+  <div class="trust-badge">
+    <span>🔒</span> Pago seguro vía Hotmart
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main style="flex: 1; max-width: 680px; margin: 0 auto; padding: 40px 24px 60px; width: 100%;">
+
+  <!-- Header -->
+  <div style="text-align: center; margin-bottom: 40px;">
+    <div style="font-size: 13px; font-weight: 600; color: var(--color-teal); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 12px;">Ya casi</div>
+    <h1 style="font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 0 0 14px;">
+      Tu primera semana<br>
+      <span class="serif" style="color: var(--color-teal); font-style: italic;">es completamente gratis.</span>
+    </h1>
+    <p style="font-size: 17px; color: rgba(15,42,61,0.65); margin: 0; line-height: 1.6;">
+      Revisa qué incluye y completa tu acceso en menos de 2 minutos.
+    </p>
+  </div>
+
+  <!-- Bloque central: resumen + CTA -->
+  <div style="background: white; border-radius: 24px; border: 1px solid rgba(15,42,61,0.09); overflow: hidden; margin-bottom: 28px;">
+
+    <!-- Precio -->
+    <div style="padding: 28px 32px; border-bottom: 1px solid rgba(15,42,61,0.07);">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+        <div>
+          <div style="font-size: 13px; color: rgba(15,42,61,0.5); font-weight: 500; margin-bottom: 2px;">PLAN MENSUAL</div>
+          <div style="display: flex; align-items: baseline; gap: 6px;">
+            <span style="font-size: 42px; font-weight: 800; line-height: 1;">$14</span>
+            <span style="font-size: 16px; color: rgba(15,42,61,0.5);">USD / mes</span>
+          </div>
+        </div>
+        <div style="background: var(--color-warm); border-radius: 12px; padding: 10px 16px; text-align: center;">
+          <div style="font-size: 18px; font-weight: 800; color: var(--color-teal);">7 días</div>
+          <div style="font-size: 12px; color: rgba(15,42,61,0.6); font-weight: 500;">gratis primero</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checklist de lo que incluye -->
+    <div style="padding: 24px 32px; border-bottom: 1px solid rgba(15,42,61,0.07);">
+      <div style="font-size: 12px; font-weight: 600; color: rgba(15,42,61,0.4); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 16px;">Lo que obtienes hoy</div>
+
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Tadeo disponible 24/7</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Crisis de madrugada, mañanas complicadas, lo que sea. Siempre responde.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Los 8 modos completos</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Crisis, colegio, rutinas, medicación, especialista y más. Sin límite de conversaciones.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Herramientas concretas, no teoría</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Pasos accionables, correos listos para mandar, rutinas visuales adaptadas a tu hijo.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Sin culpa, sin juicios</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Hecho por un papá de niño con TDAH. Entiende lo que vives desde adentro.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Garantía -->
+    <div style="padding: 20px 32px; border-bottom: 1px solid rgba(15,42,61,0.07); background: rgba(20,184,166,0.04);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="font-size: 28px;">🛡️</div>
+        <div>
+          <div style="font-weight: 700; font-size: 15px; color: var(--color-deep);">Garantía total de 7 días</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.65); margin-top: 2px;">Si Tadeo no te ayuda, no pagas nada. Sin preguntas, sin formularios. Reembolso automático.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOQUE ANTI-OBJECIÓN: anticipa el shock visual del checkout de Hotmart -->
+    <div style="padding: 24px 32px; background: #FFF8F0; border-bottom: 1px solid rgba(15,42,61,0.07);">
+      <div style="font-size: 12px; font-weight: 700; color: var(--color-coral); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 10px;">⚠️ Importante leer antes</div>
+      <div style="font-size: 15px; line-height: 1.6; color: var(--color-deep);">
+        En la siguiente pantalla (Hotmart) vas a ver el <strong>precio mensual</strong> y un botón verde que dice <strong>"Comprar ahora"</strong>. <span style="background: #FEF3E8; padding: 2px 6px; border-radius: 4px;">No te asustes</span>: ese es el precio que pagarías <strong>después</strong> de los 7 días gratis, si decides quedarte.
+        <br><br>
+        <strong style="color: var(--color-teal);">Hoy se cobra $0.</strong> Solo se valida tu tarjeta. Tienes 7 días para usar Tadeo sin compromiso.
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="padding: 32px; text-align: center;">
+      <a href="https://pay.hotmart.com/A105604971G" class="btn-pay" onclick="fbq('track', 'InitiateCheckout');">
+        Empezar mi prueba gratis →
+      </a>
+      <div style="margin-top: 14px; font-size: 13px; color: rgba(15,42,61,0.45);">
+        $0 hoy · Se cobra recién al día 8 · Cancelas en 2 clicks
+      </div>
+    </div>
+  </div>
+
+  <!-- Cómo funciona el proceso -->
+  <div style="margin-bottom: 28px;">
+    <div style="font-size: 12px; font-weight: 600; color: rgba(15,42,61,0.4); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 16px; text-align: center;">Qué pasa ahora</div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+
+      <div style="display: flex; align-items: flex-start; gap: 14px; background: white; border-radius: 16px; padding: 16px 20px; border: 1px solid rgba(15,42,61,0.07);">
+        <div class="step-badge">1</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Completa tu registro en Hotmart</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Nombre, email y tarjeta. Toma menos de 2 minutos. No se hace ningún cargo ahora.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; gap: 14px; background: white; border-radius: 16px; padding: 16px 20px; border: 1px solid rgba(15,42,61,0.07);">
+        <div class="step-badge">2</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">Recibes acceso inmediato a Tadeo</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Email de bienvenida con el link directo al bot. Puedes hablar con Tadeo en los próximos minutos.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; gap: 14px; background: white; border-radius: 16px; padding: 16px 20px; border: 1px solid rgba(15,42,61,0.07);">
+        <div class="step-badge">3</div>
+        <div>
+          <div style="font-weight: 600; font-size: 15px;">7 días para decidir sin presión</div>
+          <div style="font-size: 14px; color: rgba(15,42,61,0.6); margin-top: 2px;">Si antes del día 7 sientes que no es para ti, cancelas en 2 clicks y no se cobra nada.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Testimonio Bianca (placeholder activable) -->
+  <!--
+  <div style="background: white; border-radius: 20px; border: 1px solid rgba(15,42,61,0.08); padding: 24px 28px; margin-bottom: 28px;">
+    <div style="font-size: 16px; line-height: 1.6; color: rgba(15,42,61,0.8); margin-bottom: 16px;">
+      "Lo usé por primera vez en una crisis a las 11 de la noche. En 30 segundos tenía 3 pasos concretos. No lo podía creer."
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-warm); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">B</div>
+      <div>
+        <div style="font-weight: 600; font-size: 14px;">Bianca</div>
+        <div style="font-size: 13px; color: rgba(15,42,61,0.5);">Mamá de niño con TDAH, usuaria desde mayo 2026</div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- CTA secundario final -->
+  <div style="text-align: center; padding-top: 8px;">
+    <a href="https://pay.hotmart.com/A105604971G" class="btn-pay" onclick="fbq('track', 'InitiateCheckout');">
+      Empezar mi prueba gratis →
+    </a>
+    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <span class="trust-badge">🔒 SSL seguro</span>
+      <span class="trust-badge">↩️ Garantía 7 días</span>
+      <span class="trust-badge">❌ Sin permanencia</span>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="text-align: center; padding: 20px 24px; font-size: 13px; color: rgba(15,42,61,0.4); border-top: 1px solid rgba(15,42,61,0.07); background: white;">
+  © 2026 Tadeo · <a href="/" style="color: rgba(15,42,61,0.4); text-decoration: underline;">Volver a la página principal</a>
+</footer>
+
+</body>
+</html>
