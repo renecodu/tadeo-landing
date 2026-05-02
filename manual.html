@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padres TDAH: El manual que el psicólogo no te da | Sistema TADEO</title>
+<meta name="description" content="Manual escrito por un papá de niño con TDAH. 8 herramientas reales para crisis, rutinas, colegio, medicación y más. Sin jerga clínica. Sin culpa.">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1270864691823274');
+fbq('track', 'PageView');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --color-deep: #0F2A3D;
+    --color-teal: #14B8A6;
+    --color-coral: #FB7185;
+    --color-cream: #FFF8F0;
+    --color-warm: #FEF3E8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    color: var(--color-deep);
+    background: var(--color-cream);
+    margin: 0;
+    line-height: 1.6;
+  }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; }
+
+  .btn-primary {
+    background: var(--color-deep);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.15s, background 0.15s;
+    box-shadow: 0 4px 20px rgba(15,42,61,0.25);
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: #1A3A52; transform: translateY(-2px); }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.05; margin: 0 0 20px; font-weight: 700; }
+  h2 { font-size: clamp(26px, 4vw, 36px); line-height: 1.15; margin: 0 0 16px; font-weight: 700; }
+  h3 { font-size: 19px; font-weight: 700; margin: 0 0 8px; }
+
+  .pill {
+    display: inline-block;
+    background: white;
+    border: 1px solid rgba(15,42,61,0.1);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: rgba(15,42,61,0.7);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid rgba(15,42,61,0.08);
+    margin-bottom: 16px;
+  }
+
+  .chapter {
+    background: white;
+    border-radius: 16px;
+    padding: 22px 24px;
+    border: 1px solid rgba(15,42,61,0.08);
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .chapter-num {
+    background: var(--color-deep);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 15px;
+  }
+
+  .check { color: var(--color-teal); font-weight: 700; margin-right: 8px; }
+
+  .price-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    border: 2px solid var(--color-teal);
+    box-shadow: 0 8px 32px rgba(20,184,166,0.12);
+    text-align: center;
+  }
+
+  .scarcity-badge {
+    display: inline-block;
+    background: var(--color-coral);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .price-old { font-size: 22px; color: rgba(15,42,61,0.5); text-decoration: line-through; margin-right: 12px; }
+  .price-new { font-size: 56px; font-weight: 800; color: var(--color-deep); line-height: 1; }
+
+  .faq-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    border: 1px solid rgba(15,42,61,0.08);
+    margin-bottom: 10px;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: "+"; font-size: 22px; color: var(--color-teal); font-weight: 400; }
+  .faq-item[open] summary::after { content: "−"; }
+  .faq-item p { margin: 14px 0 0; color: rgba(15,42,61,0.75); font-size: 15px; }
+
+  section { padding: 60px 0; }
+  section.compact { padding: 40px 0; }
+
+  .quote {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--color-deep);
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav style="padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(15,42,61,0.07); background: white;">
+  <a href="/" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--color-deep);">
+    <div style="width: 36px; height: 36px; border-radius: 8px; background: var(--color-deep); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">T</div>
+    <span style="font-weight: 600; font-size: 17px;">Tadeo</span>
+  </a>
+  <a href="https://pay.hotmart.com/M105659589P" class="btn-primary" style="padding: 10px 22px; font-size: 14px;" onclick="fbq('track', 'InitiateCheckout');">Quiero el manual</a>
+</nav>
+
+<!-- HERO -->
+<section style="padding: 70px 0 50px;">
+  <div class="container">
+    <div class="pill">📘 Manual escrito por un papá real, no por un experto</div>
+    <h1>
+      El manual que el psicólogo
+      <span class="serif" style="color: var(--color-teal); font-style: italic;">nunca te dio.</span>
+    </h1>
+    <p style="font-size: 19px; color: rgba(15,42,61,0.75); margin: 0 0 32px; max-width: 580px;">
+      Un sistema completo en 8 capítulos para criar a tu hijo con TDAH sin culpa, sin jerga clínica y sin sentir que estás fallando todos los días. Escrito por un papá que lo vive desde adentro.
+    </p>
+    <a href="https://pay.hotmart.com/M105659589P" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">Quiero el manual ahora →</a>
+    <div style="margin-top: 16px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: rgba(15,42,61,0.6);">
+      <span>✅ Garantía 7 días</span>
+      <span>✅ Pago único</span>
+      <span>✅ Acceso de por vida</span>
+    </div>
+  </div>
+</section>
+
+<!-- DOLOR / EMPATÍA -->
+<section style="background: white;">
+  <div class="container">
+    <h2>Si estás leyendo esto, probablemente:</h2>
+    <div style="margin-top: 28px;">
+      <div class="card" style="margin-bottom: 14px;">
+        <p style="margin: 0; font-size: 17px;">Has gritado más de lo que querías y después te has encerrado a llorar pensando que eres mal padre/madre.</p>
+      </div>
+      <div class="card" style="margin-bottom: 14px;">
+        <p style="margin: 0; font-size: 17px;">Has salido de la consulta del psicólogo con 3 frases vagas y la sensación de haber gastado plata en nada.</p>
+      </div>
+      <div class="card" style="margin-bottom: 14px;">
+        <p style="margin: 0; font-size: 17px;">Has recibido llamadas del colegio que te hacen sentir culpable, como si el "problema" fueras tú.</p>
+      </div>
+      <div class="card" style="margin-bottom: 14px;">
+        <p style="margin: 0; font-size: 17px;">Has buscado en Google a las 2 AM "cómo ayudar a un niño con TDAH" y solo encuentras artículos genéricos escritos por gente que no lo vive.</p>
+      </div>
+    </div>
+    <p style="text-align: center; font-size: 18px; margin-top: 30px; color: var(--color-deep); font-weight: 600;">
+      Yo también pasé por todo eso. Por eso escribí este manual.
+    </p>
+  </div>
+</section>
+
+<!-- AUTOR / TU HISTORIA -->
+<section>
+  <div class="container">
+    <div class="pill">Quién soy</div>
+    <h2>Soy Rene. No soy psicólogo. Soy papá de un niño con TDAH.</h2>
+    <p style="font-size: 18px; color: rgba(15,42,61,0.8); margin-top: 20px;">
+      Yo también recibí el diagnóstico. Yo también probé especialistas, libros caros y consejos de gente que no entendía. Yo mismo tengo TDAH, así que crío con TDAH a un hijo con TDAH.
+    </p>
+    <p style="font-size: 18px; color: rgba(15,42,61,0.8);">
+      Durante años fui anotando todo lo que funcionaba y lo que no. Las preguntas que SÍ había que hacerle al neurólogo. Las plantillas de correo que abrían diálogo con el colegio. Las rutinas visuales que sí servían. Los protocolos de crisis que reducían los gritos a la mitad.
+    </p>
+    <p style="font-size: 18px; color: rgba(15,42,61,0.8);">
+      Ese cuaderno mío ahora es este manual. <strong>Es el manual que ojalá alguien me hubiera dado a mí cuando empecé.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- LO QUE OBTIENES -->
+<section style="background: white;">
+  <div class="container">
+    <div class="pill">Qué incluye</div>
+    <h2>8 capítulos. 7 plantillas. 1 sistema completo.</h2>
+    <p style="font-size: 17px; color: rgba(15,42,61,0.75); margin-bottom: 36px;">
+      Cada capítulo aborda un problema real y entrega herramientas concretas que puedes aplicar el mismo día.
+    </p>
+
+    <div class="chapter">
+      <div class="chapter-num">1</div>
+      <div>
+        <h3>Crisis: cuando todo explota</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Protocolo de 4 pasos para contener una crisis sin que terminen todos llorando. Plantilla de bolsillo "Crisis 30 segundos".</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">2</div>
+      <div>
+        <h3>Rutinas: mañanas y noches sin guerra</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Por qué los niños TDAH NO funcionan con rutinas verbales. Sistema visual que sí funciona. Tablero descargable y editable.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">3</div>
+      <div>
+        <h3>Colegio: cuando la escuela no entiende</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Cómo abrir conversación con profesores sin ataques. Tus derechos legales. Plantilla de correo + plantilla para reuniones difíciles.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">4</div>
+      <div>
+        <h3>Medicación: la decisión más difícil</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Mitos sobre el metilfenidato. Las preguntas que SIEMPRE hago al neurólogo. Diario de seguimiento descargable.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">5</div>
+      <div>
+        <h3>Especialistas: cómo aprovechar las consultas</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Qué llevar preparado a cada cita. Las 7 preguntas clave. Cómo detectar si tu especialista no es el correcto.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">6</div>
+      <div>
+        <h3>Hermanos y familia: el daño colateral</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Hermano celoso. Abuelos que no creen en TDAH. Pareja agotada. Scripts reales para cada conversación.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">7</div>
+      <div>
+        <h3>Tú primero: sin el cuidador no hay cuidado</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Por qué descansar NO te hace mal padre. Sistema mínimo viable de autocuidado en 5 min al día. Lista de "permisos al padre TDAH".</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">8</div>
+      <div>
+        <h3>El siguiente paso: aplicar todo esto en el día a día</h3>
+        <p style="margin: 0; color: rgba(15,42,61,0.7); font-size: 15px;">Cómo integrar el sistema. Casos reales. Acceso preferente al bot Tadeo (asistente 24/7) como continuación natural.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS / COMUNIDAD -->
+<section>
+  <div class="container">
+    <div class="card" style="background: var(--color-warm); border: 2px dashed var(--color-coral);">
+      <div class="scarcity-badge">🎁 BONUS POR TIEMPO LIMITADO</div>
+      <h3 style="font-size: 22px; margin-bottom: 10px;">Acceso a la comunidad privada de WhatsApp</h3>
+      <p style="margin: 0; color: rgba(15,42,61,0.8); font-size: 16px;">
+        Solo para los <strong>primeros 100 compradores</strong>. Un grupo cerrado donde compartimos experiencias reales, dudas honestas y soporte entre padres que estamos en la misma. Yo participo personalmente cada día.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- LO QUE NO ES -->
+<section style="background: white;">
+  <div class="container">
+    <h2>Lo que este manual NO es</h2>
+    <div style="margin-top: 24px;">
+      <p style="font-size: 17px; margin-bottom: 12px;"><strong>❌ No reemplaza a tu psicólogo, neurólogo ni pediatra.</strong> Si tu hijo necesita atención profesional, sigue yendo. Este manual es un apoyo entre consultas, no una alternativa.</p>
+      <p style="font-size: 17px; margin-bottom: 12px;"><strong>❌ No es un curso de neurociencia.</strong> No te voy a enseñar a diagnosticar. Te voy a dar herramientas concretas para los problemas cotidianos.</p>
+      <p style="font-size: 17px; margin-bottom: 12px;"><strong>❌ No te promete que tu hijo cambiará en 7 días.</strong> Esto es un sistema. Lo aplicas con consistencia. Los cambios reales toman semanas. Lo que sí cambia rápido es <em>tu manera de responder</em>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIO + CTA -->
+<section id="comprar" style="background: var(--color-cream);">
+  <div class="container">
+    <div class="price-card">
+      <div class="scarcity-badge">🔥 PRE-VENTA · SOLO 50 CUPOS</div>
+      <h2 style="margin-bottom: 8px;">Padres TDAH</h2>
+      <p style="color: rgba(15,42,61,0.6); margin: 0 0 24px; font-size: 15px;">El manual que el psicólogo no te da</p>
+
+      <div style="margin: 20px 0;">
+        <span class="price-old">$47</span>
+        <span class="price-new">$27</span>
+        <div style="font-size: 15px; color: rgba(15,42,61,0.6); margin-top: 6px;">USD · Pago único · Acceso de por vida</div>
+      </div>
+
+      <div style="text-align: left; margin: 28px 0; max-width: 380px; margin-left: auto; margin-right: auto;">
+        <p style="margin: 8px 0;"><span class="check">✓</span> Manual PDF completo (~80 páginas)</p>
+        <p style="margin: 8px 0;"><span class="check">✓</span> 8 audios narrados por mí</p>
+        <p style="margin: 8px 0;"><span class="check">✓</span> 7 plantillas descargables</p>
+        <p style="margin: 8px 0;"><span class="check">✓</span> Comunidad privada WhatsApp (BONUS)</p>
+        <p style="margin: 8px 0;"><span class="check">✓</span> Acceso a actualizaciones futuras</p>
+        <p style="margin: 8px 0;"><span class="check">✓</span> Garantía total 7 días</p>
+      </div>
+
+      <a href="https://pay.hotmart.com/M105659589P" id="cta-comprar" class="btn-primary" style="font-size: 18px; padding: 20px 48px;" onclick="fbq('track', 'InitiateCheckout');">
+        Comprar ahora por $27 →
+      </a>
+      <p style="margin-top: 14px; font-size: 13px; color: rgba(15,42,61,0.5);">
+        Después de los primeros 50, el precio sube a $47.
+      </p>
+    </div>
+
+    <div style="text-align: center; margin-top: 36px; padding: 24px; background: white; border-radius: 16px; border: 1px solid rgba(20,184,166,0.3);">
+      <div style="font-size: 32px; margin-bottom: 6px;">🛡️</div>
+      <h3 style="font-size: 18px; margin-bottom: 6px;">Garantía total de 7 días</h3>
+      <p style="margin: 0; font-size: 15px; color: rgba(15,42,61,0.7);">Si en 7 días sientes que el manual no te aporta valor real, te devuelvo el 100% de tu dinero. Sin preguntas, sin formularios.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: white;">
+  <div class="container">
+    <div class="pill">Preguntas frecuentes</div>
+    <h2 style="margin-bottom: 30px;">Lo que muchos padres me preguntan</h2>
+
+    <details class="faq-item">
+      <summary>¿Sirve si mi hijo aún no tiene diagnóstico?</summary>
+      <p>Sí. Muchas familias compran el manual mientras están en proceso de diagnóstico. Las herramientas son útiles para cualquier niño con dificultades de regulación, atención o impulsividad, tenga o no diagnóstico formal.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Funciona si mi hijo ya es adolescente?</summary>
+      <p>El manual está enfocado en niños de 5 a 14 años, pero los principios (especialmente sobre comunicación, colegio y medicación) aplican también a adolescentes. Los ejemplos los ajustarás tú a la edad.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Por qué pago único y no suscripción?</summary>
+      <p>Porque es un manual, no un servicio. Pagas una vez y es tuyo de por vida. Si quieres acompañamiento 24/7, después del manual te doy acceso preferente al bot Tadeo a precio reducido — pero eso es opcional.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Cuánto demora en llegar?</summary>
+      <p>Acceso inmediato. Apenas confirmas el pago, te llega un email con el link de descarga del PDF, los audios y las plantillas.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿El manual reemplaza al psicólogo o neurólogo?</summary>
+      <p>No. El manual es un apoyo entre consultas, una guía práctica para el día a día. Si tu hijo necesita atención profesional, sigue acudiendo a especialistas. Lo que el manual hace es darte herramientas para aplicar entre sesiones.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Qué pasa si no me sirve?</summary>
+      <p>Tienes 7 días de garantía total. Si no sientes que aporta valor real, escribes a soporte y te devuelvo el 100% de tu dinero. Sin preguntas.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="background: var(--color-deep); color: white; text-align: center;">
+  <div class="container">
+    <p class="quote serif" style="color: white; font-size: 28px;">
+      "Ojalá alguien me hubiera dado este manual cuando empezamos. Hubiera ahorrado años de culpa."
+    </p>
+    <p style="margin: 18px 0 30px; color: rgba(255,255,255,0.6); font-size: 15px;">— Lo que se dice cada padre TDAH después de leerlo</p>
+    <a href="https://pay.hotmart.com/M105659589P" class="btn-primary" style="background: var(--color-teal); font-size: 18px;" onclick="fbq('track', 'InitiateCheckout');">
+      Quiero el manual por $27 →
+    </a>
+    <p style="margin-top: 14px; font-size: 13px; color: rgba(255,255,255,0.5);">
+      Pre-venta. Solo 50 cupos. Después sube a $47.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="text-align: center; padding: 30px 24px; font-size: 13px; color: rgba(15,42,61,0.5); background: white;">
+  © 2026 Tadeo · <a href="/" style="color: rgba(15,42,61,0.5);">Volver al bot</a>
+  <p style="max-width: 600px; margin: 14px auto 0; font-size: 12px; line-height: 1.5;">
+    Este manual no reemplaza atención médica ni psicológica profesional. Es un recurso educativo y de apoyo familiar. Si tu hijo presenta síntomas que requieren evaluación clínica, consulta con un especialista.
+  </p>
+</footer>
+
+<script>
+  // Reemplazar el href de #cta-comprar cuando tengas el link de Hotmart del nuevo producto
+  // Ejemplo: document.getElementById('cta-comprar').href = 'https://pay.hotmart.com/TU_NUEVO_PRODUCTO';
+</script>
+
+</body>
+</html>
