@@ -98,9 +98,9 @@ Esto no es perder tiempo. Es el paso que hace que los demás funcionen.
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Acá va una historia real tuya: una crisis concreta, cómo la viviste, qué hiciste mal al principio y cómo cambió cuando aplicaste algo de esto. Tu voz real es lo que hace que el lector sienta "este tipo me entiende". Mándamela y la integro aquí.*
+**Ejemplo.** Son las 7 de la tarde en el supermercado. Tu hijo quería un dulce, le dijiste que no, y en segundos está en el suelo gritando mientras la gente mira. Tu primer impulso es levantarlo del brazo y amenazarlo. En vez de eso respiras (Paso 2), te agachas a su altura y, con voz baja, le dices: "Estoy aquí. Vamos a respirar juntos". No discutes el dulce. Esperas. En un par de minutos el grito se vuelve llanto, y el llanto se calma. La conversación sobre el dulce la tienen en el auto, ya tranquilos. La crisis duró 3 minutos en vez de 20.
 
 ---
 

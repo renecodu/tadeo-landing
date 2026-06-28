@@ -70,9 +70,9 @@ Si te identificas, **busca apoyo profesional para ti.** Pedir ayuda no es fallar
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Un momento real tuyo de agotamiento, y qué cambió cuando empezaste a cuidarte (aunque sea un poco). Tu voz real le da permiso al lector de hacer lo mismo.*
+**Ejemplo.** Son las 11 de la noche, por fin durmió, y te quedas mirando el techo, vacío. Antes habrías abierto el teléfono a scrollear una hora sintiéndote peor. Esta vez haces algo distinto y mínimo: te preparas un té, sin pantalla, cinco minutos en silencio. Y antes de dormir anotas una sola cosa que SÍ saliste bien hoy ("mantuve la calma en la crisis de la tarde"). No es terapia ni una hora de gimnasio. Son cinco minutos. Pero hechos todos los días, son lo que evita que te quemes.
 
 ---
 

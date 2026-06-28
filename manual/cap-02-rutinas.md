@@ -73,9 +73,9 @@ Una rutina visual es un **tablero con los pasos dibujados o escritos, en orden, 
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Una mañana caótica concreta tuya, y cómo cambió (aunque sea un poco) cuando pusieron el tablero. Tu voz real.*
+**Ejemplo.** 7:10 de la mañana. Antes, esta hora era pura guerra: "¡vístete!", "¡los dientes!", "¡vamos tarde!", repetido quince veces, terminando ambos gritando. Ahora el tablero está pegado en la puerta de la pieza. Tu hijo lo mira, mueve el imán de "vestirme" a la casilla de listo, y sigue solo al siguiente paso. ¿Lo hace perfecto? No. Pero hace cuatro de seis pasos sin que le grites, y salen de la casa sin pelear. Eso, que parece poco, cambia el ánimo de todo el día.
 
 ---
 

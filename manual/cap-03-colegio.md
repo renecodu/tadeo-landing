@@ -102,9 +102,9 @@ Gracias,
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Una reunión o llamada del colegio concreta tuya: cómo se sintió, qué hiciste, y cómo cambió la relación cuando llegaste como aliado. Tu voz real.*
+**Ejemplo.** Suena el teléfono y ves que es el colegio. Se te aprieta la guata: otra vez. Antes habrías contestado a la defensiva. Esta vez respiras y partes distinto: "Gracias por avisarme, sé que tiene muchos niños". Escuchas sin justificar. Cuando termina, propones: "¿Probamos sentarlo adelante y darle las instrucciones de a una?". La profesora, que esperaba pelea, baja la guardia. Quedan en revisarlo en tres semanas, por correo. La llamada que antes arruinaba tu día, esta vez terminó en un plan.
 
 ---
 

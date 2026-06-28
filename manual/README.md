@@ -39,10 +39,18 @@ Van integradas dentro de los capítulos (no en archivos sueltos):
 
 Cada `.html` usa `estilo.css`. Para producir el PDF se renderiza el HTML (ej. con Chromium/Playwright → `page.pdf`) en A4. Al mejorar el diseño en `estilo.css` o en los `.html`, se regenera el PDF.
 
-## ⚠️ Pendientes antes de lanzar
-- [ ] Integrar las **historias reales de René** en los recuadros 📌 de cada capítulo.
-- [ ] Grabar los **8 audios** (uno por capítulo, narrados por René).
+## ✅ Hecho
+- [x] 8 capítulos + intro + 7 plantillas escritos.
+- [x] Recuadros 📌 reemplazados por **"Una escena que se repite"** (ejemplos ilustrativos).
+- [x] **Portada** (`portada.html`) y **Guía rápida de 1 página** (`guia-rapida.html`).
+- [x] **PDF único** generado con `combinar.js` → `Manual-Padres-TDAH-COMPLETO.pdf`.
+
+## ⚠️ Pendientes (post-venta o de René)
+- [ ] (Opcional, cuando empiece a vender) Sumar **historias reales** y **audios** narrados por René.
 - [ ] Poner el **link real de Tadeo** en el CTA del Cap 8.
-- [ ] Revisar/mejorar diseño con Claude Design.
+- [ ] Mejorar diseño con **Claude Design** (sobre los `.html` / `estilo.css`).
 - [ ] Confirmar que el producto Hotmart 7665867 sea **pago único** (no suscripción).
-- [ ] Unir todos los capítulos en **un solo PDF** para entrega.
+- [ ] Subir el PDF a Hotmart como entrega del producto.
+
+## Generar el PDF único
+El script `combinar.js` (en el scratchpad de la sesión) une portada + caps 0-8 + guía rápida en un solo PDF A4. Reúne el `<body>` de cada `cap-*.html`, aplica `estilo.css` y agrega saltos de página. Re-ejecutar tras cambios de diseño.

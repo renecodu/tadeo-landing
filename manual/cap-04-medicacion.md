@@ -71,9 +71,9 @@ El médico necesita datos, no impresiones vagas. Lleva un registro simple. No ti
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Cómo viviste TÚ la decisión sobre medicación (la duda, la culpa, cómo lo conversaron con el médico). Sin recomendar nada — solo tu experiencia humana. Tu voz real.*
+**Ejemplo.** Llega el control con el neurólogo. Antes ibas con un "anda más o menos" y salías con más dudas que respuestas. Esta vez llevas el diario de seguimiento: dos semanas de puntajes de atención, ánimo, sueño y apetito, con un par de observaciones. El médico mira los datos y nota algo que tú no habías visto: el apetito baja siempre los mismos días. Con esa información concreta puede ajustar mejor. La consulta rindió —no porque preguntaras más, sino porque llegaste con datos reales.
 
 ---
 

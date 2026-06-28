@@ -79,9 +79,9 @@ Señales de alerta:
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Una consulta concreta tuya — una en que saliste frustrado, y/o una en que llegaste preparado y cambió todo. Tu voz real.*
+**Ejemplo.** Tienes 20 minutos de consulta que costaron caro y semanas de espera. Antes los gastabas recordando a medias lo que querías preguntar. Esta vez llegas con tres dudas priorizadas anotadas y la bitácora del mes. Partes por la pregunta importante, no la dejas para el final. Anotas las respuestas en el momento. Antes de irte preguntas: "¿Cuál es el plan hasta la próxima y qué observo?". Sales con un plan claro en la mano, no con esa sensación de "se me quedó algo".
 
 ---
 

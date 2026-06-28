@@ -62,9 +62,9 @@ El cansancio crónico + criar distinto = terreno fértil para pelear. Uno cree q
 
 ---
 
-## [📌 TU HISTORIA AQUÍ — René]
+## Una escena que se repite
 
-> *Algo real de tu familia: el hermano celoso, el abuelo incrédulo, o una pelea de pareja por la crianza — y cómo lo fueron resolviendo. Tu voz real.*
+**Ejemplo.** Almuerzo familiar. La abuela suelta el clásico: "En mi época eso se arreglaba con una buena mano". Antes habrías peleado o te habrías quedado tragando rabia. Esta vez respiras y respondes tranquilo, firme: "Entiendo que en tu época era distinto. Hoy esto es lo que nos está funcionando, y te necesito de aliada, no de jueza". No la convences de la teoría —no hace falta—. Solo dejas claro el límite. El almuerzo sigue, y tu hijo vio a su papá defender con calma cómo se hacen las cosas en casa.
 
 ---
 
