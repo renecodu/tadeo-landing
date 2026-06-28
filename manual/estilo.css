@@ -1,0 +1,30 @@
+/* Estilo compartido del Manual TDAH — edita aquí para cambiar el diseño de TODOS los capítulos */
+@page { margin: 22mm 18mm; }
+* { box-sizing: border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; color: #1a2b38; line-height: 1.65; font-size: 12pt; }
+h1 { font-size: 26pt; color: #0F2A3D; line-height: 1.15; margin: 0 0 4px; }
+.kicker { color: #14B8A6; font-weight: bold; letter-spacing: .05em; text-transform: uppercase; font-size: 10pt; font-family: Arial, sans-serif; margin-bottom: 6px; }
+h2 { font-size: 15pt; color: #0F2A3D; margin: 26px 0 8px; border-bottom: 2px solid #14B8A6; padding-bottom: 4px; }
+h3 { font-size: 12.5pt; color: #0F2A3D; margin: 16px 0 4px; }
+p { margin: 0 0 10px; }
+.nota { font-style: italic; color: #5a6b78; background: #FFF8F0; border-left: 3px solid #FB7185; padding: 10px 14px; font-size: 11pt; }
+.oro { background: #FEF3E8; border-left: 4px solid #14B8A6; padding: 10px 14px; font-weight: bold; color: #0F2A3D; margin: 14px 0; }
+ul { margin: 6px 0 12px; padding-left: 20px; }
+li { margin-bottom: 5px; }
+.pasos h3 { color: #14B8A6; }
+.plantilla { background: #0F2A3D; color: #fff; border-radius: 12px; padding: 22px 26px; margin: 16px 0; font-family: Arial, sans-serif; }
+.plantilla .t { color: #5EEAD4; font-weight: bold; letter-spacing: .08em; font-size: 11pt; margin-bottom: 14px; text-transform: uppercase; }
+.plantilla ol, .plantilla ul { margin: 0; padding-left: 18px; }
+.plantilla li { margin-bottom: 10px; font-size: 11pt; }
+.plantilla .foot { margin-top: 14px; font-size: 10pt; color: #9fb4c0; border-top: 1px solid rgba(255,255,255,.15); padding-top: 10px; }
+.email { background: #fff; border: 1px solid #d9e0e5; border-radius: 10px; padding: 18px 22px; font-family: Arial, sans-serif; font-size: 11pt; color: #2a3b48; }
+.email .lbl { color: #5a6b78; font-size: 9.5pt; }
+.tablero { background: #fff; border: 2px solid #14B8A6; border-radius: 12px; padding: 18px 20px; font-family: Arial, sans-serif; }
+.tablero .col { display: inline-block; vertical-align: top; width: 48%; }
+.tablero h4 { color: #0F2A3D; margin: 0 0 8px; font-size: 12pt; }
+.tablero li { margin-bottom: 8px; font-size: 11pt; }
+.tuhistoria { border: 2px dashed #FB7185; border-radius: 10px; padding: 14px 18px; background: #fff; color: #5a6b78; font-style: italic; }
+.resumen { background: #FFF8F0; border-radius: 10px; padding: 16px 20px; }
+.next { color: #14B8A6; font-style: italic; font-weight: bold; }
+.err { color: #b4231f; }
+.pagefoot { text-align:center; color:#9fb4c0; font-size:9pt; font-family:Arial,sans-serif; margin-top:30px; }
