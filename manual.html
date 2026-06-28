@@ -165,6 +165,28 @@ fbq('track', 'PageView');
     max-width: 600px;
     margin: 0 auto;
   }
+
+  /* Testimonios */
+  .testi-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 720px) { .testi-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .testi { background: white; border-radius: 16px; padding: 22px 24px; border: 1px solid rgba(15,42,61,0.08); }
+  .testi-stars { color: #FBBF24; font-size: 15px; margin-bottom: 10px; }
+  .testi-text { font-size: 15px; color: rgba(15,42,61,0.85); line-height: 1.6; margin: 0 0 14px; }
+  .testi-author { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--color-warm); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+
+  /* Sticky mobile CTA */
+  .sticky-mobile-cta {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: white; padding: 12px 16px;
+    border-top: 1px solid rgba(15,42,61,0.1);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.06);
+    z-index: 50; display: none; text-align: center;
+  }
+  @media (max-width: 768px) {
+    .sticky-mobile-cta { display: block; }
+    body { padding-bottom: 84px; }
+  }
 </style>
 </head>
 
@@ -322,7 +344,7 @@ fbq('track', 'PageView');
       <div class="scarcity-badge">🎁 BONUS POR TIEMPO LIMITADO</div>
       <h3 style="font-size: 22px; margin-bottom: 10px;">Acceso a la comunidad privada de WhatsApp</h3>
       <p style="margin: 0; color: rgba(15,42,61,0.8); font-size: 16px;">
-        Solo para los <strong>primeros 100 compradores</strong>. Un grupo cerrado donde compartimos experiencias reales, dudas honestas y soporte entre padres que estamos en la misma. Yo participo personalmente cada día.
+        Solo para los <strong>primeros 50 compradores</strong>. Un grupo cerrado donde compartimos experiencias reales, dudas honestas y soporte entre padres que estamos en la misma. Yo participo personalmente cada día.
       </p>
     </div>
   </div>
@@ -339,6 +361,51 @@ fbq('track', 'PageView');
     </div>
   </div>
 </section>
+
+<!-- =================================================================
+     TESTIMONIOS  ·  ⚠️ ACTIVAR ANTES DE LANZAR
+     NO publiques testimonios inventados. Reemplaza el texto y los nombres
+     con reseñas REALES de tus compradores/lectores (con su permiso) y luego
+     borra las líneas "<!- -" y "- ->" que envuelven el bloque para activarlo.
+     ================================================================= -->
+<!--
+<section style="background: var(--color-cream);">
+  <div class="container">
+    <div class="pill">Lo que dicen otros padres</div>
+    <h2 style="margin-bottom: 30px;">No eres el único que necesitaba esto</h2>
+    <div class="testi-grid">
+
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"[TESTIMONIO REAL 1 — reemplazar. Ej: una frase concreta sobre cómo cambió una noche difícil o una crisis.]"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div><strong style="font-size:14px;">[Nombre real]</strong><div style="font-size:13px;color:rgba(15,42,61,0.5);">[Mamá/Papá]</div></div>
+        </div>
+      </div>
+
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"[TESTIMONIO REAL 2 — reemplazar.]"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div><strong style="font-size:14px;">[Nombre real]</strong><div style="font-size:13px;color:rgba(15,42,61,0.5);">[Mamá/Papá]</div></div>
+        </div>
+      </div>
+
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"[TESTIMONIO REAL 3 — reemplazar.]"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">C</div>
+          <div><strong style="font-size:14px;">[Nombre real]</strong><div style="font-size:13px;color:rgba(15,42,61,0.5);">[Mamá/Papá]</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+-->
 
 <!-- PRECIO + CTA -->
 <section id="comprar" style="background: var(--color-cream);">
@@ -441,10 +508,12 @@ fbq('track', 'PageView');
   </p>
 </footer>
 
-<script>
-  // Reemplazar el href de #cta-comprar cuando tengas el link de Hotmart del nuevo producto
-  // Ejemplo: document.getElementById('cta-comprar').href = 'https://pay.hotmart.com/TU_NUEVO_PRODUCTO';
-</script>
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-mobile-cta">
+  <a href="https://pay.hotmart.com/M105659589P" class="btn-primary" style="display:block; padding: 14px; font-size: 16px;" onclick="fbq('track', 'InitiateCheckout');">
+    Quiero el manual por $27 →
+  </a>
+</div>
 
 </body>
 </html>
