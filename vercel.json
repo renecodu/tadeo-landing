@@ -1,11 +1,3 @@
 {
-  "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/",
-      "has": [{ "type": "host", "value": "tdah.resettotal.store" }],
-      "destination": "/manual",
-      "permanent": false
-    }
-  ]
+  "cleanUrls": true
 }
