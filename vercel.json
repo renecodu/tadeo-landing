@@ -1,3 +1,23 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "tdah.resettotal.store" }],
+      "destination": "/manual.html"
+    },
+    {
+      "source": "/landing",
+      "has": [{ "type": "host", "value": "tadeo.resettotal.store" }],
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "tadeo.resettotal.store" }],
+      "destination": "/landing",
+      "permanent": false
+    }
+  ]
 }
