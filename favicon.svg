@@ -1,7 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0F2A3D"/>
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif" font-weight="700"
-        font-size="38" fill="#ffffff">T</text>
-  <circle cx="48" cy="20" r="4" fill="#14B8A6"/>
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
+  <!-- Letter T -->
+  <path d="M30 16 h22 v9 h-6.5 v26 h-9 V25 H30 z" fill="#0F2A3D"/>
+  <!-- converging teal lines into the T stem -->
+  <path d="M12 27 C24 30, 30 34, 35.5 36" fill="none" stroke="#14B8A6" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M12 46 C24 43, 30 39, 35.5 37" fill="none" stroke="#14B8A6" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- scattered dots (chaos) -->
+  <circle cx="9"  cy="30" r="2.1" fill="#0F2A3D"/>
+  <circle cx="14" cy="36" r="2.1" fill="#0F2A3D"/>
+  <circle cx="10" cy="42" r="2.1" fill="#14B8A6"/>
+  <circle cx="17" cy="28" r="2.1" fill="#14B8A6"/>
+  <circle cx="18" cy="44" r="2.1" fill="#FF6B6B"/>
+  <circle cx="13" cy="49" r="2.1" fill="#0F2A3D"/>
+  <circle cx="23" cy="33" r="2.1" fill="#FF6B6B"/>
+  <circle cx="22" cy="40" r="2.1" fill="#0F2A3D"/>
+  <!-- ordered flow out (right) -->
+  <circle cx="42" cy="37" r="2.2" fill="#14B8A6"/>
+  <circle cx="48" cy="37" r="2.2" fill="#14B8A6"/>
+  <circle cx="54" cy="37" r="2.2" fill="#FF6B6B"/>
 </svg>
